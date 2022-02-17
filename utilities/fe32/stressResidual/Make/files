@@ -1,0 +1,3 @@
+stressResidual.C
+
+EXE = $(FOAM_APPBIN)/stressResidual
