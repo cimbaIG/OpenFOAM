@@ -1,0 +1,1 @@
+Steady state SIMPLE solver for the veering atmospheric boundary layer simulation. The Coriolis force is implemented in the momentum equation.
