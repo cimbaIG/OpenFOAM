@@ -1,0 +1,23 @@
+DEPENDENCIES = \
+calcType/calcType.dep\
+calcType/calcTypeNew.dep\
+field/components/components.dep\
+field/mag/mag.dep\
+field/magSqr/magSqr.dep\
+field/magGrad/magGrad.dep\
+field/grad/grad.dep\
+field/div/div.dep\
+field/randomise/randomise.dep\
+field/interpolate/interpolate.dep\
+field/min/min.dep\
+field/minMax/minMax.dep\
+field/minMaxMag/minMaxMag.dep\
+field/cellMinMax/cellMinMax.dep\
+field/max/max.dep\
+field/average/average.dep\
+field/volIntegrate/volIntegrate.dep\
+field/laplacian/laplacian.dep\
+field/smooth/smooth.dep\
+field/curl/curl.dep\
+basic/addSubtract/addSubtract.dep\
+basic/multiplyDivide/multiplyDivide.dep

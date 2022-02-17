@@ -1,0 +1,23 @@
+OBJECTS = \
+$(OBJECTS_DIR)/calcType.o\
+$(OBJECTS_DIR)/calcTypeNew.o\
+$(OBJECTS_DIR)/components.o\
+$(OBJECTS_DIR)/mag.o\
+$(OBJECTS_DIR)/magSqr.o\
+$(OBJECTS_DIR)/magGrad.o\
+$(OBJECTS_DIR)/grad.o\
+$(OBJECTS_DIR)/div.o\
+$(OBJECTS_DIR)/randomise.o\
+$(OBJECTS_DIR)/interpolate.o\
+$(OBJECTS_DIR)/min.o\
+$(OBJECTS_DIR)/minMax.o\
+$(OBJECTS_DIR)/minMaxMag.o\
+$(OBJECTS_DIR)/cellMinMax.o\
+$(OBJECTS_DIR)/max.o\
+$(OBJECTS_DIR)/average.o\
+$(OBJECTS_DIR)/volIntegrate.o\
+$(OBJECTS_DIR)/laplacian.o\
+$(OBJECTS_DIR)/smooth.o\
+$(OBJECTS_DIR)/curl.o\
+$(OBJECTS_DIR)/addSubtract.o\
+$(OBJECTS_DIR)/multiplyDivide.o

@@ -1,0 +1,3 @@
+nearWallDistance.C
+
+EXE = $(FOAM_APPBIN)/nearWallDistance

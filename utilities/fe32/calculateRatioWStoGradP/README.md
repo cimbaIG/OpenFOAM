@@ -1,0 +1,2 @@
+#PhD
+Utility calculates the new field as a ratio between the wind source body force and the pressure gradient force. It is post processing utility used in combination with the wind source body force implemented in the momentum equation.

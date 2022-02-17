@@ -1,0 +1,3 @@
+writeInletEpsilon.C
+
+EXE = $(FOAM_USER_APPBIN)/writeInletEpsilon

@@ -1,0 +1,13 @@
+ifdef FOAM_DEV
+  FOAM_DEV_OPTION = -DFOAM_DEV
+  ifeq "3.2" "$(word 1, $(sort 3.2 $(WM_PROJECT_VERSION)))"
+    FOAM_DEV_V_OPTION = -DFOAM_DV
+  endif
+endif
+
+EXE_INC = \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    $(FOAM_DEV_OPTION) $(FOAM_DEV_V_OPTION)
+
+LIB_LIBS = \
+    -lfiniteVolume

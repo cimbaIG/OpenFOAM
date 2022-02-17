@@ -1,0 +1,7 @@
+# Ignore OpenFoam build files
+.dep
+Make/linux64GccDPOpt/*
+Make/linux64Gcc*/*
+lib/lnInclude/*
+postProcessing/foamCalcFunctionsEx/lnInclude/*
+postProcessing/postCalc/lnInclude/*

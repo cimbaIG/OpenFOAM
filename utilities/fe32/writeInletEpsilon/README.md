@@ -1,0 +1,2 @@
+#PhD
+Pre-processing utility for defining velocity, turbulent kinetic energy and dissipation rate inlet boundary conditions. Utility reads converged profiles and set them at the inlet of the computational domain.

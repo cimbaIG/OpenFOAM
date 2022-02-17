@@ -1,0 +1,23 @@
+LOCAL_OBJECTS = \
+calcType.o\
+calcTypeNew.o\
+components.o\
+mag.o\
+magSqr.o\
+magGrad.o\
+grad.o\
+div.o\
+randomise.o\
+interpolate.o\
+min.o\
+minMax.o\
+minMaxMag.o\
+cellMinMax.o\
+max.o\
+average.o\
+volIntegrate.o\
+laplacian.o\
+smooth.o\
+curl.o\
+addSubtract.o\
+multiplyDivide.o
