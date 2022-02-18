@@ -1,0 +1,57 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | foam-extend: Open Source CFD                    |
+|  \\    /   O peration     | Version:     3.2                                |
+|   \\  /    A nd           | Web:         http://www.foam-extend.org         |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      nut;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -1 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    bottomRoughWall
+    {
+        type            nutRoughWallFunction;
+        Cmu             0.03;
+        kappa           0.41;
+        E               9.8;
+        Ks		uniform 0.0044;
+        Cs		uniform 0.5;
+        value           uniform 0;
+    }
+    inlet
+    {
+        type            zeroGradient;
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    sideLeft
+    {
+        type            zeroGradient;
+    }
+    sideRight
+    {
+        type            zeroGradient;
+    }
+
+    top
+    {
+        type		symmetryPlane;
+    }
+}
+
+// ************************************************************************* //
