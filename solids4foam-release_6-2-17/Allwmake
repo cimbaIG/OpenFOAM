@@ -1,9 +1,0 @@
-#!/bin/sh
-set -x
-
-(cd ThirdParty && ./Allwmake)
-
-wmake libso src/solids4foamModels
-wmake libso src/blockCoupledSolidTools
-
-wmake all applications/solvers

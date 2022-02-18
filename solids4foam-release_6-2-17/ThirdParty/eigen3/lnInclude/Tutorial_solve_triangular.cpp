@@ -1,1 +1,0 @@
-../doc/snippets/Tutorial_solve_triangular.cpp

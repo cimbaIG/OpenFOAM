@@ -1,1 +1,0 @@
-../blockFvPatchVectorFields/blockFixedDisplacementZeroShear/blockFixedDisplacementZeroShearFvPatchVectorField.H

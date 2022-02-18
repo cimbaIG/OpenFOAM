@@ -1,1 +1,0 @@
-../doc/snippets/tut_arithmetic_redux_minmax.cpp

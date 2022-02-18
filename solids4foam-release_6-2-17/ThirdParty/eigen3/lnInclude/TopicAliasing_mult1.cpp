@@ -1,1 +1,0 @@
-../doc/snippets/TopicAliasing_mult1.cpp

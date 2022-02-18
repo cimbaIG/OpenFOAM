@@ -1,1 +1,0 @@
-../numerics/newGGIInterpolation/newGGIInterpolationTemplate.H

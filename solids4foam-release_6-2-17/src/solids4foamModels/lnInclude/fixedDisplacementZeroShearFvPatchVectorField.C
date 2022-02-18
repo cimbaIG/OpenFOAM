@@ -1,1 +1,0 @@
-../solidModels/fvPatchFields/fixedDisplacementZeroShear/fixedDisplacementZeroShearFvPatchVectorField.C

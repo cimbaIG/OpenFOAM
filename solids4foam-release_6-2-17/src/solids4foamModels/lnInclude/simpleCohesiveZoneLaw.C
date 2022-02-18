@@ -1,1 +1,0 @@
-../dynamicFvMesh/simpleCrackerFvMesh/simpleCohesiveZone/simpleCohesiveZoneLaws/simpleCohesiveZoneLaw/simpleCohesiveZoneLaw.C

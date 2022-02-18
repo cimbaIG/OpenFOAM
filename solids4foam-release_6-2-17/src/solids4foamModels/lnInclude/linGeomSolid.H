@@ -1,1 +1,0 @@
-../solidModels/linGeomSolid/linGeomSolid.H

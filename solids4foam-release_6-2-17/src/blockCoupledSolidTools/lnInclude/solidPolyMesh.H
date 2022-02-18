@@ -1,1 +1,0 @@
-../solidPolyMesh/solidPolyMesh.H

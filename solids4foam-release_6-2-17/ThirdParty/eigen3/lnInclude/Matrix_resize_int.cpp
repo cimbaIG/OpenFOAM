@@ -1,1 +1,0 @@
-../doc/snippets/Matrix_resize_int.cpp

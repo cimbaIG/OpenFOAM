@@ -1,1 +1,0 @@
-../demos/mandelbrot/mandelbrot.cpp

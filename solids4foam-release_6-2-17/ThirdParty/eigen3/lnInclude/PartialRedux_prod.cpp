@@ -1,1 +1,0 @@
-../doc/snippets/PartialRedux_prod.cpp

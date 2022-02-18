@@ -1,1 +1,0 @@
-../doc/examples/DenseBase_template_int_middleRows.cpp

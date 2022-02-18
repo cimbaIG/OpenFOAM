@@ -1,1 +1,0 @@
-../materialModels/mechanicalModel/mechanicalModelTemplates.C

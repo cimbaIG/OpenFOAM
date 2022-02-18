@@ -1,1 +1,0 @@
-../blockGlobalPointPatch/blockGlobalPointPatch.H

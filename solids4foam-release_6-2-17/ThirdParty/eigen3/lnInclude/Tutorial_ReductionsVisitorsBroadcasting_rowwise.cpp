@@ -1,1 +1,0 @@
-../doc/examples/Tutorial_ReductionsVisitorsBroadcasting_rowwise.cpp

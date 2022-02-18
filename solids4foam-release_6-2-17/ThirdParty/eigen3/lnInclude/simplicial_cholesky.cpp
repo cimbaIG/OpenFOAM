@@ -1,1 +1,0 @@
-../test/simplicial_cholesky.cpp

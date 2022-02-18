@@ -1,1 +1,0 @@
-../materialModels/mechanicalModel/mechanicalLaws/linearElasticFromFile/linearElasticFromFile.H

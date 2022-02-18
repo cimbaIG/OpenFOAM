@@ -1,1 +1,0 @@
-../doc/snippets/MatrixBase_block_int_int_int_int.cpp

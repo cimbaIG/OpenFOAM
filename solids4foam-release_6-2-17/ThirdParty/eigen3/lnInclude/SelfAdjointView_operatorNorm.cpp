@@ -1,1 +1,0 @@
-../doc/snippets/SelfAdjointView_operatorNorm.cpp

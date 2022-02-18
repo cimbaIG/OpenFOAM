@@ -1,1 +1,0 @@
-../test/mapped_matrix.cpp

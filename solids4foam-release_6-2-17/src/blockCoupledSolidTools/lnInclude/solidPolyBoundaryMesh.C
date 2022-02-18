@@ -1,1 +1,0 @@
-../solidPolyMesh/solidPolyBoundaryMesh.C

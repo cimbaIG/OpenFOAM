@@ -1,1 +1,0 @@
-../doc/snippets/Tutorial_solve_matrix_inverse.cpp

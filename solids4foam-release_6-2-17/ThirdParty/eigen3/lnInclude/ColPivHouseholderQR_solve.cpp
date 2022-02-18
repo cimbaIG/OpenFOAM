@@ -1,1 +1,0 @@
-../doc/snippets/ColPivHouseholderQR_solve.cpp

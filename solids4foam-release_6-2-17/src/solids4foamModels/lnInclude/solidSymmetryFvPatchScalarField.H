@@ -1,1 +1,0 @@
-../solidModels/fvPatchFields/solidSymmetry/solidSymmetryFvPatchScalarField.H

@@ -1,1 +1,0 @@
-../doc/snippets/Cwise_times_equal.cpp

@@ -1,1 +1,0 @@
-../doc/examples/Tutorial_ReductionsVisitorsBroadcasting_reductions_norm.cpp

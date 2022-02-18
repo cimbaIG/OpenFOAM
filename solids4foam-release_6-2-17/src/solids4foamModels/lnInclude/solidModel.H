@@ -1,1 +1,0 @@
-../solidModels/solidModel/solidModel.H

@@ -1,1 +1,0 @@
-../doc/snippets/DenseBase_LinSpaced_seq.cpp

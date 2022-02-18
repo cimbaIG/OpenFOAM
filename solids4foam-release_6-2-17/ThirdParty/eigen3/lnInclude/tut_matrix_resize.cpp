@@ -1,1 +1,0 @@
-../doc/examples/tut_matrix_resize.cpp

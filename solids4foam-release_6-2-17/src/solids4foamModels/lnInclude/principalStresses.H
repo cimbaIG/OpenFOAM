@@ -1,1 +1,0 @@
-../functionObjects/principalStresses/principalStresses.H

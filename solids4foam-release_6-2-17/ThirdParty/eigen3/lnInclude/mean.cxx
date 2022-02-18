@@ -1,1 +1,0 @@
-../bench/btl/data/mean.cxx

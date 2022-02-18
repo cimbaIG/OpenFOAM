@@ -1,1 +1,0 @@
-../test/product_notemporary.cpp

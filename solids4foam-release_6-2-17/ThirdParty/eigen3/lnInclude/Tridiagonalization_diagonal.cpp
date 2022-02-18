@@ -1,1 +1,0 @@
-../doc/snippets/Tridiagonalization_diagonal.cpp

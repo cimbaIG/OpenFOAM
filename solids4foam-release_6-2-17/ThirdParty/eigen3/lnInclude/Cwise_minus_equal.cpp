@@ -1,1 +1,0 @@
-../doc/snippets/Cwise_minus_equal.cpp

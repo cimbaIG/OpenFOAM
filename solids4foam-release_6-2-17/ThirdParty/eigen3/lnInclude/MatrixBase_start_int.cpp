@@ -1,1 +1,0 @@
-../doc/snippets/MatrixBase_start_int.cpp

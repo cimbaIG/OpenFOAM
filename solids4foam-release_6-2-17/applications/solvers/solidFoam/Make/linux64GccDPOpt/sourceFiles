@@ -1,3 +1,0 @@
-SOURCE = \
-processor/processorFvPatchVectorField.C\
-solidFoam.C

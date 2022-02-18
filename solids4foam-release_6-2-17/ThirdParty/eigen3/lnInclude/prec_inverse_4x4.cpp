@@ -1,1 +1,0 @@
-../test/prec_inverse_4x4.cpp

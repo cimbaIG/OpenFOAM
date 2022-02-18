@@ -1,1 +1,0 @@
-../test/corners.cpp

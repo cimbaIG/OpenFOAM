@@ -1,1 +1,0 @@
-../materialModels/mechanicalModel/mechanicalLaws/StVenantKirchhoffOrthotropicElastic/StVenantKirchhoffOrthotropicElastic.H

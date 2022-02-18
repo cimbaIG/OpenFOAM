@@ -1,1 +1,0 @@
-../doc/snippets/Matrix_setZero_int.cpp

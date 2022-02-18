@@ -1,1 +1,0 @@
-../doc/examples/function_taking_eigenbase.cpp

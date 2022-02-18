@@ -1,1 +1,0 @@
-../test/selfadjoint.cpp

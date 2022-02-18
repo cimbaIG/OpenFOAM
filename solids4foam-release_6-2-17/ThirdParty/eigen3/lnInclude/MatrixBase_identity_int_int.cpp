@@ -1,1 +1,0 @@
-../doc/snippets/MatrixBase_identity_int_int.cpp

@@ -1,1 +1,0 @@
-../solidModels/fvPatchFields/solidContact/contactModels/frictionContactModels/frictionContactModel/newFrictionContactModel.C

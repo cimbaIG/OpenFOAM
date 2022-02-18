@@ -1,1 +1,0 @@
-../doc/examples/class_VectorBlock.cpp

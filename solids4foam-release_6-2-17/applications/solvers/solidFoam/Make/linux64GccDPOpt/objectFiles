@@ -1,3 +1,0 @@
-OBJECTS = \
-$(OBJECTS_DIR)/processorFvPatchVectorField.o\
-$(OBJECTS_DIR)/solidFoam.o

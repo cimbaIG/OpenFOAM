@@ -1,4 +1,0 @@
-DEPENDENCIES = \
-totalLaplace/totalLaplaceTetMotionSolver.dep\
-dynamicBodyFvMesh/dynamicBodyFvMesh.dep\
-fluidFoam.dep

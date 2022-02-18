@@ -1,1 +1,0 @@
-../test/mapstride.cpp

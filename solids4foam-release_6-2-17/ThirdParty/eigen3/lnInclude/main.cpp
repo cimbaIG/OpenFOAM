@@ -1,1 +1,0 @@
-../bench/btl/libs/STL/main.cpp

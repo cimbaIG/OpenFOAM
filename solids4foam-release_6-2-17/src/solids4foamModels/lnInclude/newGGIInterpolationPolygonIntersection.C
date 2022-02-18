@@ -1,1 +1,0 @@
-../numerics/newGGIInterpolation/newGGIInterpolationPolygonIntersection.C

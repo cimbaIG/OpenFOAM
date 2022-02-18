@@ -1,4 +1,0 @@
-OBJECTS = \
-$(OBJECTS_DIR)/totalLaplaceTetMotionSolver.o\
-$(OBJECTS_DIR)/dynamicBodyFvMesh.o\
-$(OBJECTS_DIR)/fluidFoam.o

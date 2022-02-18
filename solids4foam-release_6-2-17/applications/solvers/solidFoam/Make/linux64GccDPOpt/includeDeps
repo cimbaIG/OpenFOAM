@@ -1,2 +1,0 @@
-include processor/processorFvPatchVectorField.dep
-include solidFoam.dep

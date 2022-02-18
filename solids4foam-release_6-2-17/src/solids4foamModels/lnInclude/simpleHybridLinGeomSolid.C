@@ -1,1 +1,0 @@
-../solidModels/simpleHybridLinGeomSolid/simpleHybridLinGeomSolid.C

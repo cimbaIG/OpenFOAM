@@ -1,1 +1,0 @@
-Fluid models developed by Mihael Cindori (based on research published by Tuković) to computationally model the LES channel flow.

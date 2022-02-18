@@ -1,1 +1,0 @@
-../doc/snippets/Matrix_setIdentity_int_int.cpp

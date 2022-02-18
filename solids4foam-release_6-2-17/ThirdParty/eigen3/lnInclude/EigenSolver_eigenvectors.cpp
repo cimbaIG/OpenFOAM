@@ -1,1 +1,0 @@
-../doc/snippets/EigenSolver_eigenvectors.cpp

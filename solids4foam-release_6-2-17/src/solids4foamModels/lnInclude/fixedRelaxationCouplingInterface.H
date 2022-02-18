@@ -1,1 +1,0 @@
-../fluidSolidInterfaces/fixedRelaxationCouplingInterface/fixedRelaxationCouplingInterface.H

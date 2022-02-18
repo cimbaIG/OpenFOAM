@@ -1,1 +1,0 @@
-../doc/snippets/FullPivLU_kernel.cpp

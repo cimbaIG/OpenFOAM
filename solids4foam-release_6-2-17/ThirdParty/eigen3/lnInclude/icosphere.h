@@ -1,1 +1,0 @@
-../demos/opengl/icosphere.h

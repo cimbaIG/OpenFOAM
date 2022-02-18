@@ -1,1 +1,0 @@
-../solidModels/poroLinGeomSolid/poroLinGeomSolid.C

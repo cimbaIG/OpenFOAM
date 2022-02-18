@@ -1,1 +1,0 @@
-../demos/opengl/quaternion_demo.cpp
