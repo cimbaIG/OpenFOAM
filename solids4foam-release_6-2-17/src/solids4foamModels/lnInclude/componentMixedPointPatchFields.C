@@ -1,0 +1,1 @@
+../solidModels/pointPatchFields/componentMixed/componentMixedPointPatchFields.C

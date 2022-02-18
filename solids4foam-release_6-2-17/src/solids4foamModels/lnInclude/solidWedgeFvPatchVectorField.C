@@ -1,0 +1,1 @@
+../solidModels/fvPatchFields/solidWedge/solidWedgeFvPatchVectorField.C

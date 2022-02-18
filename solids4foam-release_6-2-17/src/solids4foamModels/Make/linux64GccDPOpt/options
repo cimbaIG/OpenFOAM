@@ -1,0 +1,57 @@
+# 1 "options"
+# 1 "<built-in>"
+# 1 "<command-line>"
+
+
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+
+# 17 "/usr/include/stdc-predef.h" 3 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2 "<command-line>" 2
+# 1 "options"
+EXE_INC =     -I../blockCoupledSolidTools/lnInclude     -I$(LIB_SRC)/finiteVolume/lnInclude     -I$(LIB_SRC)/meshTools/lnInclude     -I$(LIB_SRC)/finiteArea/lnInclude     -I$(LIB_SRC)/lagrangian/lnInclude     -I$(LIB_SRC)/dynamicMesh/lnInclude     -I$(LIB_SRC)/dynamicMesh/dynamicMesh/lnInclude     -I$(LIB_SRC)/dynamicMesh/dynamicFvMesh/lnInclude     -I$(LIB_SRC)/dynamicMesh/topoChangerFvMesh/lnInclude     -I$(LIB_SRC)/sampling/lnInclude     -I$(LIB_SRC)/surfMesh/lnInclude     -I$(LIB_SRC)/postProcessing/foamCalcFunctions/lnInclude     -I$(LIB_SRC)/postProcessing/functionObjects/forces/lnInclude     -I$(LIB_SRC)/errorEstimation/lnInclude     -I$(LIB_SRC)/mesh/cfMesh/lnInclude     -I$(LIB_SRC)/dynamicMesh/meshMotion/fvMotionSolver/lnInclude     -I$(LIB_SRC)/turbulenceModels/incompressible/turbulenceModel     -I$(LIB_SRC)/transportModels     -I$(LIB_SRC)/transportModels/incompressible/singlePhaseTransportModel     -I$(LIB_SRC)/tetFiniteElement/lnInclude
+# 22 "options"
+
+EXE_LIBS =     -lfiniteVolume     -lmeshTools     -lfiniteArea     -ldynamicFvMesh     -ldynamicMesh     -ltopoChangerFvMesh     -llagrangian     -lsampling     -lsurfMesh     -lfoamCalcFunctions     -lforces     -lerrorEstimation     -lcfMesh     -lincompressibleTurbulenceModel     -lincompressibleRASModels     -lincompressibleLESModels     -lincompressibleTransportModels

@@ -1,0 +1,3 @@
+DEPENDENCIES = \
+processor/processorFvPatchVectorField.dep\
+solidFoam.dep

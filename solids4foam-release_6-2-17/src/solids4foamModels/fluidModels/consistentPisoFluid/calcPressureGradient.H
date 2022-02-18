@@ -1,0 +1,20 @@
+{
+    gradp_ = fvc::grad(p_);
+    
+    const skewCorrectionVectors& scv =
+        skewCorrectionVectors::New(mesh);
+
+    surfaceScalarField pf = linear<scalar>(mesh).interpolate(p_);
+    
+    if (scv.skew())
+    {
+        pf += (scv() & linear<vector>(mesh).interpolate(gradp_));
+    }
+
+    gradp_ = fv::gaussGrad<scalar>(mesh).gradf(pf, "grad(p)");
+    fv::gaussGrad<scalar>(mesh).correctBoundaryConditions
+    (
+        p_, 
+        gradp_
+    );
+}

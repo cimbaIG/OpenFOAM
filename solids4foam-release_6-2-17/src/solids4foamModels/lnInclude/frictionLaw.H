@@ -1,0 +1,1 @@
+../solidModels/fvPatchFields/solidContact/contactModels/frictionContactModels/frictionLaws/frictionLaw/frictionLaw.H

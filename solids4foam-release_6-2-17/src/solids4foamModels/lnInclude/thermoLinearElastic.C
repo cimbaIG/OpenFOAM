@@ -1,0 +1,1 @@
+../materialModels/mechanicalModel/mechanicalLaws/thermoLinearElastic/thermoLinearElastic.C

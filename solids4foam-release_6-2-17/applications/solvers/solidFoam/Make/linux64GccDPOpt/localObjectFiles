@@ -1,0 +1,3 @@
+LOCAL_OBJECTS = \
+processorFvPatchVectorField.o\
+solidFoam.o

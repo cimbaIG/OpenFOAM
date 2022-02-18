@@ -1,0 +1,1 @@
+../solidModels/fvPatchFields/solidWedge/solidWedgeFvPatchScalarField.H
