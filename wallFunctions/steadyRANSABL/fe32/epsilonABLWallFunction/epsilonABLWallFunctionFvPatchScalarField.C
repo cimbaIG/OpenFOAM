@@ -177,8 +177,7 @@ void epsilonABLWallFunctionFvPatchScalarField::updateCoeffs()
     volScalarField& G = const_cast<volScalarField&>
         (db().lookupObject<volScalarField>(GName_));
 
-    volScalarField& epsilon = const_cast<volScalarField&>
-        (db().lookupObject<volScalarField>(dimensionedInternalField().name()));
+    scalarField& epsilon = refValue();
 
     const volScalarField& k = db().lookupObject<volScalarField>(kName_);
 
@@ -204,7 +203,7 @@ void epsilonABLWallFunctionFvPatchScalarField::updateCoeffs()
 	const scalar dUdy = U_tau / (kappa_ * (y[faceI] + z0));
 
 	//- set epsilon in the near-wall cell
-        epsilon[faceCellI] = srCmu*k[faceCellI]*dUdy-nuw[faceI]*sqr(dUdy);
+        epsilon[faceI] = srCmu*k[faceCellI]*dUdy-nuw[faceI]*sqr(dUdy);
 
 	//- set the production term in the near-wall cell
 	const scalar nuEff = nuw[faceI] + nutw[faceI];
@@ -237,7 +236,6 @@ void epsilonABLWallFunctionFvPatchScalarField::write(Ostream& os) const
     os.writeKeyword("Cmu") << Cmu_ << token::END_STATEMENT << nl;
     os.writeKeyword("kappa") << kappa_ << token::END_STATEMENT << nl;
     z0_.writeEntry("z0", os);
-    writeEntry("value", os);
 }
 
 

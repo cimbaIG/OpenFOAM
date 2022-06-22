@@ -23,22 +23,23 @@ License
     Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 
 Class
-    Foam::incompressible::RASModels::epsilonABLWallFunctionFvPatchScalarField
+    Foam::incompressible::RASModels::nutABLWallFunctionFvPatchScalarField
 
 Description
-    Boundary condition for epsilon when using wall functions
-    - calculates epsilon and G
-    - epsilon values added directly into the matrix to act as a constraint
+    Boundary condition for turbulent (kinematic) viscosity when using wall
+    functions for atmospheric boundary layers.
+
+    Wall roughness is specified as the parameter z0
 
 SourceFiles
-    epsilonABLWallFunctionFvPatchScalarField.C
+    nutABLWallFunctionFvPatchScalarField.C
 
 \*---------------------------------------------------------------------------*/
 
-#ifndef epsilonABLWallFunctionFvPatchScalarField_H
-#define epsilonABLWallFunctionFvPatchScalarField_H
+#ifndef nutABLWallFunctionFvPatchScalarField_H
+#define nutABLWallFunctionFvPatchScalarField_H
 
-#include "fixedInternalValueFvPatchField.H"
+#include "nutWallFunctionFvPatchScalarField.H"
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -50,63 +51,44 @@ namespace RASModels
 {
 
 /*---------------------------------------------------------------------------*\
-           Class epsilonABLWallFunctionFvPatchScalarField Declaration
+           Class nutABLWallFunctionFvPatchScalarField Declaration
 \*---------------------------------------------------------------------------*/
 
-class epsilonABLWallFunctionFvPatchScalarField
+class nutABLWallFunctionFvPatchScalarField
 :
-    public fixedInternalValueFvPatchField<scalar>
+    public nutWallFunctionFvPatchScalarField
 {
-    // Private data
+protected:
 
-        //- Name of velocity field
-        word UName_;
-
-        //- Name of turbulence kinetic energy field
-        word kName_;
-
-        //- Name of turbulence generation field
-        word GName_;
-
-        //- Name of laminar viscosity field
-        word nuName_;
-
-        //- Name of turbulent viscosity field
-        word nutName_;
-
-        //- Cmu coefficient
-        scalar Cmu_;
-
-        //- Von Karman constant
-        scalar kappa_;
+    // Protected data
 
         //- Roughness height
         scalarField z0_;
 
 
-    // Private member functions
+    // Protected member functions
 
-        //- Check the type of the patch
-        void checkType();
+        //- Calculate the turbulence viscosity
+        virtual tmp<scalarField> calcNut() const;
 
 
 public:
 
     //- Runtime type information
-    TypeName("epsilonABLWallFunction");
+    TypeName("nutABLWallFunction");
 
 
     // Constructors
 
         //- Construct from patch and internal field
-        epsilonABLWallFunctionFvPatchScalarField
+        nutABLWallFunctionFvPatchScalarField
         (
             const fvPatch&,
             const DimensionedField<scalar, volMesh>&
         );
 
         //- Construct from patch, internal field and dictionary
-        epsilonABLWallFunctionFvPatchScalarField
+        nutABLWallFunctionFvPatchScalarField
         (
             const fvPatch&,
             const DimensionedField<scalar, volMesh>&,
@@ -114,20 +96,20 @@ public:
         );
 
         //- Construct by mapping given
-        //  epsilonABLWallFunctionFvPatchScalarField
+        //  nutABLWallFunctionFvPatchScalarField
         //  onto a new patch
-        epsilonABLWallFunctionFvPatchScalarField
+        nutABLWallFunctionFvPatchScalarField
         (
-            const epsilonABLWallFunctionFvPatchScalarField&,
+            const nutABLWallFunctionFvPatchScalarField&,
             const fvPatch&,
             const DimensionedField<scalar, volMesh>&,
             const fvPatchFieldMapper&
         );
 
         //- Construct as copy
-        epsilonABLWallFunctionFvPatchScalarField
+        nutABLWallFunctionFvPatchScalarField
         (
-            const epsilonABLWallFunctionFvPatchScalarField&
+            const nutABLWallFunctionFvPatchScalarField&
         );
 
         //- Construct and return a clone
@@ -135,14 +117,14 @@ public:
         {
             return tmp<fvPatchScalarField>
             (
-                new epsilonABLWallFunctionFvPatchScalarField(*this)
+                new nutABLWallFunctionFvPatchScalarField(*this)
             );
         }
 
         //- Construct as copy setting internal field reference
-        epsilonABLWallFunctionFvPatchScalarField
+        nutABLWallFunctionFvPatchScalarField
         (
-            const epsilonABLWallFunctionFvPatchScalarField&,
+            const nutABLWallFunctionFvPatchScalarField&,
             const DimensionedField<scalar, volMesh>&
         );
 
@@ -154,26 +136,29 @@ public:
         {
             return tmp<fvPatchScalarField>
             (
-                new epsilonABLWallFunctionFvPatchScalarField(*this, iF)
+                new nutABLWallFunctionFvPatchScalarField(*this, iF)
             );
         }
 
 
     // Member functions
 
-        // Evaluation functions
+         // Mapping functions
 
-            //- Update the coefficients associated with the patch field
-            virtual void updateCoeffs();
+            //- Map (and resize as needed) from self given a mapping object
+            virtual void autoMap(const fvPatchFieldMapper&);
 
-            //- Evaluate the patchField
-            virtual void evaluate(const Pstream::commsTypes);
-
+            //- Reverse map the given fvPatchField onto this fvPatchField
+            virtual void rmap
+            (
+                const fvPatchScalarField&,
+                const labelList&
+            ); 
 
         // I-O
 
             //- Write
-            void write(Ostream&) const;
+            virtual void write(Ostream&) const;
 };
 
 
