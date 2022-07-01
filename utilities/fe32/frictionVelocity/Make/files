@@ -1,0 +1,3 @@
+frictionVelocity.C
+
+EXE = $(FOAM_APPBIN)/frictionVelocity
